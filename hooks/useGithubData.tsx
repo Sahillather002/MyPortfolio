@@ -43,7 +43,7 @@ const useGitHubData = () => {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
-            Authorization: `Bearer ${process.env.NEXT_PUBLIC_GITHUB_TOKEN}`,
+            Authorization: `Bearer ${process.env.NEXT_PUBLIC_VERCEL_GITHUB_TOKEN}`,
           },
           body: JSON.stringify({ query }),
         });
