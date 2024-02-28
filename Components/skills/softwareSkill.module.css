@@ -1,0 +1,26 @@
+.softwareSkillsMainDiv {
+  margin: 10px 0px;
+}
+.devIcons {
+  padding-left: 0;
+  list-style: none;
+  font-size: 3rem;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  text-align: center;
+}
+
+.softwareLine {
+  display: inline-block;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.softwareLine:hover {
+  color: var(--skillsColor); /* Using CSS custom properties */
+}
+
+.softwareLine > p {
+  color: var(--subTitle); /* Using CSS custom properties */
+  font-size: 10px;
+}
