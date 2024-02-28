@@ -1,0 +1,42 @@
+.main {
+  padding: 10px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.projectTitle {
+  font-size: 52px;
+  font-weight: 400;
+  line-height: normal;
+  padding: 10px 0px;
+}
+
+.startup-project-text img {
+  max-width: 100%;
+  height: auto;
+}
+
+.repoCardsDivMain {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 1rem 1rem;
+}
+
+/* Media Query for max-width: 1380px */
+@media (max-width: 1380px) {
+  .projectTitle {
+    font-size: 40px;
+  }
+}
+
+/* Media Query for max-width: 768px */
+@media (max-width: 768px) {
+  .projectTitle {
+    font-size: 30px;
+    text-align: center;
+  }
+  .repoCardsDivMain {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+}

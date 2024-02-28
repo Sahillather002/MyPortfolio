@@ -1,0 +1,107 @@
+.greetingMain {
+  width: 90%;
+  padding: 40px 10px;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: row;
+  min-height: 100vh;
+}
+
+.subTitle {
+  color: var(--subTitle) !important;
+}
+
+.greetingMain > * {
+  flex: 1;
+  margin-bottom: 30px;
+}
+
+.buttonGreetingDiv {
+  display: flex;
+  margin-top: 20px;
+}
+
+.greetingText {
+  font-size: 70px;
+  line-height: 1.1;
+}
+
+.greetingTextP {
+  font-size: 32px;
+  margin: 10px 0px;
+  line-height: 40px;
+}
+
+.greetingImageDiv > img {
+  max-width: 100%;
+  height: auto;
+}
+
+.waveEmoji {
+  animation-duration: 1.8s;
+  animation-iteration-count: infinite;
+  animation-name: wave;
+  display: inline-block;
+  transform-origin: 70% 70%;
+}
+
+@keyframes wave {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(-10deg);
+  }
+  20% {
+    transform: rotate(12deg);
+  }
+  30% {
+    transform: rotate(-10deg);
+  }
+  40% {
+    transform: rotate(9deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+/* Media Query */
+@media (max-width: 1380px) {
+  .greetingText {
+    font-size: 50px;
+  }
+  .greetingTextP {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .buttonGreetingDiv {
+    justify-content: space-around;
+  }
+  .greetingText {
+    font-size: 30px;
+    text-align: center;
+  }
+  .greetingTextP {
+    font-size: 16px;
+    line-height: normal;
+    text-align: center;
+  }
+  .greetingMain {
+    display: block;
+  }
+  .greetingImageDiv {
+    height: 256px;
+  }
+}
+
+@media (max-width: 320px) {
+  .main {
+    width: auto;
+  }
+}

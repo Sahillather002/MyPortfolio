@@ -1,0 +1,92 @@
+.mediaDiv {
+  font-size: 2em;
+}
+
+.iconButton {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  margin-top: 30px;
+  margin-bottom: 25px;
+}
+
+.iconButton i {
+  color: var(--text-color-dark);
+  border-radius: 2.6rem;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1.3rem;
+  height: 2.6rem;
+  line-height: 2.6rem;
+  margin: 0 5px;
+  position: relative;
+  text-align: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin-bottom: 10px;
+  transition: 0.2s ease-in;
+}
+
+.facebook {
+  background-color: var(--facebook);
+}
+
+.linkedin {
+  background-color: var(--linkedin);
+}
+
+.github {
+  background-color: var(--github);
+}
+
+.gitlab {
+  background-color: var(--gitlab);
+}
+
+.google {
+  background-color: var(--google);
+}
+
+.twitter {
+  background-color: var(--twitter);
+}
+
+.medium {
+  background-color: var(--medium);
+}
+
+.stack-overflow {
+  background-color: var(--stackoverflow);
+}
+
+.kaggle {
+  background-color: var(--kaggle);
+}
+
+.instagram {
+  background-color: var(--instagram);
+}
+
+/* Hover Transition */
+.twitter:hover,
+.google :hover,
+.gitlab:hover,
+.github :hover,
+.linkedin :hover,
+.facebook :hover,
+.instagram :hover,
+.stack-overflow :hover,
+.kaggle :hover,
+.medium :hover {
+  background-color: var(--text-color);
+}
+
+/* Media Query */
+@media (max-width: 768px) {
+  .social-media-div {
+    text-align: center;
+  }
+}

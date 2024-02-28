@@ -95,3 +95,13 @@ body {
     text-wrap: balance;
   }
 }
+
+.darkMode {
+  color: var(--textColorDark);
+  background-color: var(--darkBackground);
+}
+
+.lightMode {
+  color: var(--textColor);
+  background-color: var(--lightBackground1);
+}
