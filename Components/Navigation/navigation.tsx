@@ -22,7 +22,7 @@ function Header() {
   const viewBlog = blogSection.display;
   const viewTalks = talkSection.display;
 
-  const smoothScroll = (id) => {
+  const smoothScroll = (id: any) => {
     const element = document.getElementById(id);
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
