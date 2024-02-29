@@ -1,0 +1,141 @@
+.experienceCard {
+  position: relative;
+  background-color: var(--lightBackground2);
+  box-shadow: var(--lightBoxShadowDark) 0px 10px 30px -15px;
+  border-radius: 10px;
+  border: 1px solid var(--lightBorder1);
+}
+
+.experienceCardDark {
+  position: relative;
+  background-color: var(--darkBackground);
+  box-shadow: var(--lightBoxShadowDark) 0px 10px 30px -15px;
+  border-radius: 10px;
+  border: 1px solid var(--lightBorder1);
+}
+
+.experienceCard:hover {
+  box-shadow: var(--lightBoxShadowDark) 0px 20px 30px -10px;
+}
+
+.experienceBanner {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 150%;
+  background: var(--experienceCardBannerLG);
+  border-radius: 10px 10px 0px 0px;
+  height: 11rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.experienceBlurredDiv {
+  position: absolute;
+  background: var(--experienceCardBlurredDivLG);
+  filter: blur(5px);
+  height: 11rem;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.experienceDivCompany {
+  position: absolute;
+  background: transparent;
+  height: 9rem;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.experienceTextCompany {
+  text-align: center;
+  padding: 1.5rem;
+  margin: 0;
+  color: var(--lightBackground1);
+  font-size: 25px;
+  font-weight: 700;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.experienceRoundedimg {
+  position: absolute;
+  object-fit: ;
+  left: 0;
+  right: 0;
+  top: 7rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 8rem;
+  height: 8rem;
+  box-shadow: 0 0.5rem 1rem var(--lightBoxShadowDarker);
+  border-radius: 50%;
+}
+
+.experienceTextRole {
+  text-align: center;
+  font-weight: 700;
+  font-size: 25px;
+  margin: 0px;
+  padding-top: 1.5rem;
+  line-height: normal;
+}
+
+.dark-mode-text {
+  color: var(--textColorDark) !important;
+}
+
+.experienceTextDate {
+  text-align: center;
+  font-size: 20px;
+  margin: 0px;
+  padding-top: 1rem;
+  font-weight: 600;
+}
+
+.experienceTextDesc {
+  text-align: center;
+}
+
+.experienceTextDetails {
+  padding: 1.5rem;
+  margin-top: 2rem;
+}
+
+/* Media Query */
+@media (max-width: 1380px) {
+  .experienceTextRole {
+    padding-top: 0.5rem;
+    font-size: 22px;
+  }
+  .experienceTextCompany {
+    font-size: 22px;
+  }
+  .experienceTextDate {
+    font-size: 18px;
+  }
+  .experienceRoundedimg {
+    width: 6.5rem;
+    height: 6.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .experienceTextRole,
+  .experienceTextCompany {
+    font-size: 22px;
+  }
+  .experienceTextDate {
+    font-size: 18px;
+  }
+  .experienceTextDesc {
+    font-size: 16px;
+  }
+}

@@ -1,5 +1,4 @@
 "use client";
-
 import React, { useContext } from "react";
 import styles from "./navigation.module.css";
 import ToggleSwitch from "../ToggleSwitch/toggleSwitch";
@@ -23,6 +22,13 @@ function Header() {
   const viewBlog = blogSection.display;
   const viewTalks = talkSection.display;
 
+  const smoothScroll = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <header
       className={
@@ -36,36 +42,36 @@ function Header() {
       </a>
       <ul>
         {viewSkills && (
-          <li>
+          <li onClick={() => smoothScroll("skills")}>
             <a href="#skills">Skills</a>
           </li>
         )}
         {viewExperience && (
-          <li>
+          <li onClick={() => smoothScroll("experience")}>
             <a href="#experience">Work Experiences</a>
           </li>
         )}
         {viewOpenSource && (
-          <li>
+          <li onClick={() => smoothScroll("opensource")}>
             <a href="#opensource">Open Source</a>
           </li>
         )}
         {viewAchievement && (
-          <li>
+          <li onClick={() => smoothScroll("achievements")}>
             <a href="#achievements">Achievements</a>
           </li>
         )}
         {viewBlog && (
-          <li>
+          <li onClick={() => smoothScroll("blogs")}>
             <a href="#blogs">Blogs</a>
           </li>
         )}
         {viewTalks && (
-          <li>
+          <li onClick={() => smoothScroll("talks")}>
             <a href="#talks">Talks</a>
           </li>
         )}
-        <li>
+        <li onClick={() => smoothScroll("contact")}>
           <a href="#contact">Contact Me</a>
         </li>
         <li>

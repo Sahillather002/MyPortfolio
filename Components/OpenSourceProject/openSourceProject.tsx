@@ -1,5 +1,6 @@
 "use client";
 import React, { useContext, Suspense, lazy } from "react";
+
 import { socialMediaLinks } from "@/data/portfolio";
 import Loading from "../loading/loading";
 import MyThemeContext from "@/hooks/styleContext";
@@ -37,12 +38,50 @@ export default function Projects() {
         ))}
       </div>
 
+      <div className={styles.quine}>
+        <div>
+          <a href="https://quine.sh?utm_source=widgets&utm_campaign=Sahillather002">
+            <img
+              src="https://stats.quine.sh/Sahillather002/github?theme=dark"
+              alt="Sahillather002's GitHub Stats"
+            />
+          </a>
+        </div>
+        <div>
+          <a href="https://quine.sh?utm_source=widgets&utm_campaign=Sahillather002">
+            <img
+              src="https://stats.quine.sh/Sahillather002/dependencies?theme=dark"
+              alt="Sahillather002's GitHub Dependencies"
+            />
+          </a>
+        </div>
+      </div>
+
+      <div className={styles.quine}>
+        <div>
+          <a href="https://quine.sh?utm_source=widgets&utm_campaign=Sahillather002">
+            <img
+              src="https://stats.quine.sh/Sahillather002/languages-over-time?theme=dark"
+              alt="Sahillather002's GitHub Languages Over Time"
+            />
+          </a>
+        </div>
+        <div>
+          <a href="https://quine.sh?utm_source=widgets&utm_campaign=Sahillather002">
+            <img
+              src="https://stats.quine.sh/Sahillather002/topics-over-time?theme=dark"
+              alt="Sahillather002's GitHub Topics Over Time"
+            />
+          </a>
+        </div>
+      </div>
+
       <Button
         className={styles.projectButton}
         href={socialMediaLinks.github}
         newTab={true}
       >
-        More Projects
+        More Projects 👉
       </Button>
     </div>
   );

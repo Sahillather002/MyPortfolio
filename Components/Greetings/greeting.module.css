@@ -1,10 +1,12 @@
 .greetingMain {
   width: 90%;
-  padding: 40px 10px;
+  padding: 50px 10px 30px;
   margin: 0px auto;
   display: flex;
   flex-direction: row;
   min-height: 100vh;
+  align-items: center;
+  justify-content: center;
 }
 
 .subTitle {
@@ -24,12 +26,14 @@
 .greetingText {
   font-size: 70px;
   line-height: 1.1;
+  padding: 10px 0px;
 }
 
 .greetingTextP {
   font-size: 32px;
   margin: 10px 0px;
   line-height: 40px;
+  font-style: italic;
 }
 
 .greetingImageDiv > img {
