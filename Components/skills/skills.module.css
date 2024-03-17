@@ -50,7 +50,7 @@
     margin: 20px;
   }
 
-  .skills-text {
+  .skillsText {
     font-size: 16px;
   }
 
@@ -59,7 +59,7 @@
     text-align: center;
   }
 
-  .skills-image-div {
+  .skillsImage {
     /* display: none; */
     order: 2;
   }
