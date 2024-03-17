@@ -1,9 +1,10 @@
 .experienceContainer {
   display: flex;
-  width: 90%;
+  width: 100%;
   padding: 20px 10px;
   margin: 0px 20px;
   gap: 10px;
+  justify-content: space-around;
 }
 
 .experienceHeading {
@@ -14,6 +15,7 @@
 
 .experienceCardsDiv {
   display: grid;
+
   grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
   gap: 1rem 1rem;
 }
@@ -28,5 +30,13 @@
   .experienceHeading {
     font-size: 30px;
     text-align: center;
+  }
+  .experienceContainer {
+    display: flex;
+    width: 90%;
+    flex-direction: column;
+    padding: 0px;
+    margin: 0px 15px;
+    justify-content: flex-start;
   }
 }

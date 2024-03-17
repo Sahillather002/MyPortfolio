@@ -175,3 +175,11 @@
     font-size: 12px;
   }
 }
+
+@media (max-width: 768px) {
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}

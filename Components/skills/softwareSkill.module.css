@@ -17,7 +17,7 @@
 }
 
 .softwareLine:hover {
-  color: var(--skillsColor); /* Using CSS custom properties */
+  color: rgb(245, 82, 82); /* Using CSS custom properties */
 }
 
 .softwareLine > p {

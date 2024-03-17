@@ -14,9 +14,10 @@ export default function Projects() {
   const { isDarkTheme } = useContext(MyThemeContext);
   const userData: any = useGitHubData();
 
-  if (!userData) {
-    return <Loading />;
-  }
+  // if (!userData) {
+  //   return <Loading />;
+  // }
+  if (!userData) return null;
 
   const repoData = userData.pinnedItems.edges;
 

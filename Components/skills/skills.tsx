@@ -28,7 +28,7 @@ export default function Skills() {
           </div>
         </Fade>
         <Fade right duration={1000}>
-          <div className="skills-text-div">
+          <div className={styles.skillsText}>
             <h1
               className={
                 isDarkTheme
